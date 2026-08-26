@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { background: #F6F4EF; }
+
+
+        /* ---- Fitness Aspire — Pine & Brass ---- */
+        .t10 { font-size: 10px; line-height: 14px; }
+        .t11 { font-size: 11px; line-height: 15px; }
+        .kanban-col { min-height: 6rem; }
+        @media (prefers-reduced-motion: reduce) { * { transition-duration: 0.01ms !important; } }
+
+        body, input, select, textarea, button {
+          font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+          -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, .font-display {
+          font-family: 'Sora', 'Inter', ui-sans-serif, system-ui, sans-serif;
+          letter-spacing: -0.018em;
+        }
+        .font-mono {
+          font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace !important;
+          font-feature-settings: 'tnum' 1;
+        }
+        ::selection { background: #E9D7AE; color: #122220; }
+
+        /* neutrals: warm stone-pine ramp */
+        .bg-slate-50, .hover\\:bg-slate-50:hover, .focus\\:bg-white:focus { background-color: #F6F4EF !important; }
+        .focus\\:bg-white:focus { background-color: #FFFFFF !important; }
+        .bg-slate-100, .hover\\:bg-slate-100:hover { background-color: #EDEAE2 !important; }
+        .bg-slate-200, .hover\\:bg-slate-200:hover { background-color: #E2DCD0 !important; }
+        .bg-slate-400 { background-color: #93A29C !important; }
+        .bg-slate-500 { background-color: #6E7F7A !important; }
+        .bg-slate-800, .hover\\:bg-slate-800:hover { background-color: #0D3B36 !important; }
+        .bg-slate-900 { background-color: #072E2A !important; }
+        .border-slate-50 { border-color: #F2EFE8 !important; }
+        .border-slate-100 { border-color: #EDE9E1 !important; }
+        .border-slate-200 { border-color: #E4DED2 !important; }
+        .border-slate-300 { border-color: #D3CBBB !important; }
+        .border-slate-700 { border-color: #17514A !important; }
+        .border-slate-800 { border-color: #123F3A !important; }
+        .border-slate-900 { border-color: #072E2A !important; }
+        .divide-slate-100 > :not([hidden]) ~ :not([hidden]) { border-color: #EDE9E1 !important; }
+        .text-slate-300 { color: #B7C2BD !important; }
+        .text-slate-400, .placeholder-slate-400::placeholder { color: #93A29C !important; }
+        .text-slate-500 { color: #6E7F7A !important; }
+        .text-slate-600 { color: #566762 !important; }
+        .text-slate-700, .hover\\:text-slate-700:hover { color: #3A4B47 !important; }
+        .text-slate-800, .hover\\:text-slate-800:hover { color: #22332F !important; }
+        .text-slate-900, .group:hover .group-hover\\:text-slate-900 { color: #122220 !important; }
+
+        /* brass — the brand accent, used sparingly */
+        .bg-amber-500 { background-color: #C08F3E !important; }
+        .hover\\:bg-amber-400:hover { background-color: #D9A44B !important; }
+        .bg-amber-50 { background-color: #FBF3E3 !important; }
+        .text-amber-400 { color: #E3B665 !important; }
+        .text-amber-500 { color: #C08F3E !important; }
+        .text-amber-600, .hover\\:text-amber-600:hover { color: #A0761F !important; }
+        .text-amber-700 { color: #8A5F16 !important; }
+        .text-amber-800 { color: #744E12 !important; }
+        .text-amber-900 { color: #5C3D0D !important; }
+        .border-amber-100 { border-color: #F2E6CC !important; }
+        .border-amber-200 { border-color: #E9D7AE !important; }
+        .border-amber-300, .hover\\:border-amber-300:hover { border-color: #DFC68F !important; }
+        .border-amber-500 { border-color: #C08F3E !important; }
+        .ring-amber-300 { --tw-ring-color: #DFC68F !important; }
+        .focus\\:ring-amber-400:focus { --tw-ring-color: #D9A44B !important; }
+        .focus\\:border-amber-400:focus { border-color: #C08F3E !important; }
+
+        /* jade = won / healthy */
+        .bg-emerald-50 { background-color: #E7F3EE !important; }
+        .bg-emerald-500, .hover\\:bg-emerald-500:hover { background-color: #229070 !important; }
+        .bg-emerald-600 { background-color: #1C7A5E !important; }
+        .border-emerald-200 { border-color: #BFDED2 !important; }
+        .text-emerald-700 { color: #15654E !important; }
+
+        /* ember = overdue / lost */
+        .bg-rose-50 { background-color: #FBEBE7 !important; }
+        .bg-rose-400 { background-color: #D97D68 !important; }
+        .bg-rose-500, .hover\\:bg-rose-500:hover { background-color: #BE4630 !important; }
+        .bg-rose-600 { background-color: #A63B27 !important; }
+        .border-rose-100 { border-color: #F5DED7 !important; }
+        .border-rose-200 { border-color: #F0CCC3 !important; }
+        .text-rose-400 { color: #D97D68 !important; }
+        .text-rose-500 { color: #BE4630 !important; }
+        .text-rose-600, .hover\\:text-rose-600:hover { color: #A63B27 !important; }
+        .text-rose-700 { color: #93341F !important; }
+        .text-rose-900 { color: #5E1F12 !important; }
+
+        /* ochre = due today / warm */
+        .bg-orange-50 { background-color: #FDF2DF !important; }
+        .bg-orange-500 { background-color: #E09A2A !important; }
+        .border-orange-200 { border-color: #F3DDB2 !important; }
+        .text-orange-700 { color: #8A5910 !important; }
+
+        /* steel = cold / informational */
+        .bg-sky-50 { background-color: #EBF2F8 !important; }
+        .bg-sky-400 { background-color: #6398C4 !important; }
+        .bg-sky-500 { background-color: #43769F !important; }
+        .border-sky-200 { border-color: #C6DAE9 !important; }
+        .text-sky-700 { color: #2F5C80 !important; }
+
+        /* remaining stage dots */
+        .bg-cyan-500 { background-color: #2E8B84 !important; }
+        .bg-indigo-500 { background-color: #40608F !important; }
+        .bg-violet-500 { background-color: #6A5AA0 !important; }
+        .bg-pink-500 { background-color: #A8557E !important; }
+
+        /* surfaces get real depth */
+        .bg-white.rounded-xl { box-shadow: 0 1px 2px rgba(7,46,42,.05), 0 4px 12px -6px rgba(7,46,42,.06); }
+        .bg-white.rounded-xl.shadow-xl { box-shadow: 0 24px 60px -18px rgba(7,46,42,.32); }
+        .shadow-2xl { box-shadow: -24px 0 70px -20px rgba(7,46,42,.35) !important; }
+        .shadow-lg { box-shadow: 0 10px 28px -10px rgba(7,46,42,.22) !important; }
+
+        /* the hero */
+        .hero-pine {
+          background:
+            radial-gradient(120% 140% at 88% -10%, rgba(192,143,62,.22) 0%, rgba(192,143,62,0) 55%),
+            linear-gradient(158deg, #0A3833 0%, #072E2A 48%, #05221F 100%);
+          border: 1px solid #14514A;
+        }
+        .hero-rule { background: linear-gradient(90deg, #C08F3E 0%, rgba(192,143,62,0) 70%); height: 1px; }
+        .brand-mark { background: linear-gradient(145deg, #E3B665 0%, #C08F3E 55%, #9A6D24 100%); }
+        .nav-active { background-color: #0D3B36 !important; box-shadow: inset 2px 0 0 #C08F3E; }
+        .stat-edge { height: 2px; border-radius: 2px; }
+
+        /* sidebar scrollbar */
+        aside ::-webkit-scrollbar { width: 6px; }
+        aside ::-webkit-scrollbar-thumb { background: #17514A; border-radius: 3px; }
+      
